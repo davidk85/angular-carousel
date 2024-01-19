@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build angular-responsive-carousel",
+    "pack:lib": "cd dist/angular-responsive-carousel && npm pack",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "carouselNg12App": {
+    "ng-carousel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/carouselNg12App",
+            "outputPath": "dist/ng-carousel",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "carouselNg12App:build:production"
+              "buildTarget": "ng-carousel:build:production"
             },
             "development": {
-              "buildTarget": "carouselNg12App:build:development"
+              "buildTarget": "ng-carousel:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "carouselNg12App:build"
+            "buildTarget": "ng-carousel:build"
           }
         },
         "test": {
